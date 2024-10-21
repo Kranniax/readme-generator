@@ -21,6 +21,8 @@ To install all node modules and dependencies, please run the command. npm instal
 
 ![Alt text](./assets/Screenshot%202024-10-21%20182456.jpg)
 
+### Demo: [readme-generator](https://drive.google.com/file/d/1DjvQmlbjXq-A-f1nk6-0H4jUxZs-mgcV/view?usp=sharing)
+
 ## Technologies Used
 
 - JavaScript
