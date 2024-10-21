@@ -9,11 +9,27 @@ const questions = [
     type: "input",
     name: "title",
     message: "What is the project title for this repository?",
+    validate: (projectTitle) => {
+      if (projectTitle) {
+        return true;
+      } else {
+        console.log("Please enter a project title!");
+        return false;
+      }
+    },
   },
   {
     type: "input",
     name: "description",
     message: "What is the description for this repository",
+    validate: (projectDescription) => {
+      if (projectDescription) {
+        return true;
+      } else {
+        console.log("Please enter a project description!");
+        return false;
+      }
+    },
   },
   {
     type: "input",
@@ -63,8 +79,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile("./dist/" + fileName, data, err => {
-    if (err) throw err; 
+  fs.writeFile("./dist/" + fileName, data, (err) => {
+    if (err) throw err;
     console.log("The file has been created!");
   });
 }
